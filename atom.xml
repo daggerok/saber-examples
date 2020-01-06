@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://daggerok.guthub.io/saber-examples/</id>
     <title/>
-    <updated>2020-01-06T03:36:42.059Z</updated>
+    <updated>2020-01-06T04:58:01.912Z</updated>
     <generator>Saber</generator>
     <author>
         <name>daggerok</name>
@@ -16,10 +16,88 @@
       It will appear in your document head meta (for Google search results) site description.</subtitle>
     <rights>All rights reserved</rights>
     <entry>
+        <title type="html"><![CDATA[Source code highlighting]]></title>
+        <id>https://daggerok.guthub.io/posts/another-source-code-post.html</id>
+        <link href="https://daggerok.guthub.io/posts/another-source-code-post.html"/>
+        <updated>2020-01-06T04:57:13.183Z</updated>
+        <summary type="html"><![CDATA[This result of 1 + 1 is: {{ 1 + 1 }}
+]]></summary>
+        <content type="html"><![CDATA[<h1>$page.title: Source code highlighting</h1> <h2 id="hello-saber">Hello <strong>Saber</strong>!</h2> <p>This result of 1 + 1 is: 2</p> <hr> <ol><li>install:<div class="saber-highlight" data-lang="bash"><pre class="saber-highlight-code language-bash"><code class="language-bash"><span class="token function">npm</span> i -ED saber-plugin-prismjs
+<span class="token function">npm</span> i -E prismjs saber-highlight-css</code></pre></div></li> <li>configure in <code>saber-config.js</code> file:<div class="saber-highlight" data-lang="js"><pre class="saber-highlight-code language-js"><code class="language-js">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> resolve<span class="token operator">:</span> <span class="token string">'saber-plugin-prismjs'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div></li> <li>add css in <code>saber-browser.js</code> file:<div class="saber-highlight" data-lang="js"><pre class="saber-highlight-code language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token string">'prismjs/themes/prism.css'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'saber-highlight-css/default.css'</span><span class="token punctuation">;</span></code></pre></div></li> <li>test it
+YAML:<div class="saber-highlight" data-lang="yaml"><div class="saber-highlight-mask language-yaml"><div class="code-line">siteConfig:</div><div class="code-line highlighted">  title: Saber</div><div class="code-line highlighted">  description: A framework for building modern static websites.</div><div class="code-line">​</div><div class="code-line highlighted">theme: ./src</div><div class="code-line">​</div></div><pre class="saber-highlight-code language-yaml"><code class="language-yaml"><span class="token key atrule">siteConfig</span><span class="token punctuation">:</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> Saber
+  <span class="token key atrule">description</span><span class="token punctuation">:</span> A framework for building modern static websites.
+
+<span class="token key atrule">theme</span><span class="token punctuation">:</span> ./src</code></pre></div>JavaScript:<div class="saber-highlight has-line-numbers" data-lang="js"><div class="saber-highlight-mask language-js"><div class="code-line">[</div><div class="code-line highlighted">  {</div><div class="code-line highlighted">    text: 'A page',</div><div class="code-line highlighted">    slug: 'a-page',</div><div class="code-line highlighted">    level: 1</div><div class="code-line">  },</div><div class="code-line">  {</div><div class="code-line">    text: 'A section',</div><div class="code-line">    slug: 'a-section',</div><div class="code-line">    level: 2</div><div class="code-line">  },</div><div class="code-line">  {</div><div class="code-line">    text: 'Another section',</div><div class="code-line">    slug: 'another-section',</div><div class="code-line">    level: 3</div><div class="code-line">  }</div><div class="code-line">]</div><div class="code-line">​</div></div><pre class="saber-highlight-code language-js"><code class="language-js"><span aria-hidden="true" class="saber-highlight-line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> <span class="token string">'A page'</span><span class="token punctuation">,</span>
+    slug<span class="token operator">:</span> <span class="token string">'a-page'</span><span class="token punctuation">,</span>
+    level<span class="token operator">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> <span class="token string">'A section'</span><span class="token punctuation">,</span>
+    slug<span class="token operator">:</span> <span class="token string">'a-section'</span><span class="token punctuation">,</span>
+    level<span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> <span class="token string">'Another section'</span><span class="token punctuation">,</span>
+    slug<span class="token operator">:</span> <span class="token string">'another-section'</span><span class="token punctuation">,</span>
+    level<span class="token operator">:</span> <span class="token number">3</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span></code></pre></div></li></ol> <hr> <div class="saber-highlight" data-lang="js"><pre class="saber-highlight-code language-js"><code class="language-js"><span class="token keyword">const</span> foo <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">{{ safe, this won't be interpolated! }}</span><span class="token template-punctuation string">`</span></span></code></pre></div><p>And <code>{{ bar }}</code> is safe too! <span>{{ yeah }}</span></p> <hr> <p><strong>This is an example:</strong></p> <button>0</button> <hr> <pre>available Object.keys($page): [
+  &quot;type&quot;,
+  &quot;internal&quot;,
+  &quot;contentType&quot;,
+  &quot;slug&quot;,
+  &quot;content&quot;,
+  &quot;createdAt&quot;,
+  &quot;updatedAt&quot;,
+  &quot;title&quot;,
+  &quot;markdownHeadings&quot;,
+  &quot;excerpt&quot;,
+  &quot;permalink&quot;,
+  &quot;assets&quot;,
+  &quot;attributes&quot;
+]</pre> <pre>[
+  {
+    &quot;text&quot;: &quot;Hello Saber!&quot;,
+    &quot;slug&quot;: &quot;hello-saber&quot;,
+    &quot;level&quot;: 2
+  }
+]</pre> <pre>$siteConfig: {
+  &quot;url&quot;: &quot;https://daggerok.guthub.io/saber-examples&quot;,
+  &quot;author&quot;: &quot;daggerok&quot;,
+  &quot;email&quot;: &quot;daggerok@gmail.com&quot;,
+  &quot;description&quot;: &quot;Write an awesome description for your new site here.\n      You can edit this line in saber-config.yml of in saber-config.js files.\n      It will appear in your document head meta (for Google search results) site description.&quot;
+}</pre> <pre>$localePath: /</pre> <pre>$themeConfig: {
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;Home&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;About&quot;,
+      &quot;link&quot;: &quot;/about.html&quot;
+    }
+  ],
+  &quot;social&quot;: {
+    &quot;rss&quot;: true,
+    &quot;github&quot;: &quot;daggerok&quot;,
+    &quot;twitter&quot;: &quot;daggerok&quot;
+  }
+}</pre> <hr> <p><em>NOTE</em>: see <a rel="noopener noreferrer" target="_blank" href="https://saber.land/docs/markdown-features.html#code-highlighting">https://saber.land/docs/markdown-features.html#code-highlighting</a></p>]]></content>
+        <published>2020-01-06T04:57:13.183Z</published>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[My Example Post]]></title>
         <id>https://daggerok.guthub.io/posts/my-example-post.html</id>
         <link href="https://daggerok.guthub.io/posts/my-example-post.html"/>
-        <updated>2020-01-06T03:35:53.583Z</updated>
+        <updated>2020-01-06T04:57:13.183Z</updated>
         <summary type="html"><![CDATA[Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse postulant assentior est in, no choro sadipscing repudiandae vix. Vis in euismod delenit dignissim. Ex quod nostrum sit, suas decore animal id ius, nobis solet detracto quo te.
 ]]></summary>
         <content type="html"><![CDATA[<p>Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse postulant assentior est in, no choro sadipscing repudiandae vix. Vis in euismod delenit dignissim. Ex quod nostrum sit, suas decore animal id ius, nobis solet detracto quo te.</p> <p>No laudem altera adolescens has, volumus lucilius eum no. Eam ei nulla audiam efficiantur. Suas affert per no, ei tale nibh sea. Sea ne magna harum, in denique scriptorem sea, cetero alienum tibique ei eos. Labores persequeris referrentur eos ei.</p>]]></content>
@@ -29,7 +107,7 @@
         <title type="html"><![CDATA[Some articles are just so short that we have to make the footer stick]]></title>
         <id>https://daggerok.guthub.io/posts/super-short-article.html</id>
         <link href="https://daggerok.guthub.io/posts/super-short-article.html"/>
-        <updated>2020-01-06T03:35:53.583Z</updated>
+        <updated>2020-01-06T04:57:13.183Z</updated>
         <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ]]></summary>
         <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>]]></content>
@@ -39,7 +117,7 @@
         <title type="html"><![CDATA[Some articles are just so long they deserve a really long title to see if things will break well]]></title>
         <id>https://daggerok.guthub.io/posts/super-long-article.html</id>
         <link href="https://daggerok.guthub.io/posts/super-long-article.html"/>
-        <updated>2020-01-06T03:35:53.583Z</updated>
+        <updated>2020-01-06T04:57:13.183Z</updated>
         <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 ]]></summary>
         <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>]]></content>
