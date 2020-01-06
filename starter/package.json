@@ -5,7 +5,7 @@
     "build": "saber build",
     "preserve": "npm run build",
     "serve": "serve public",
-    "gh": "cross-env BASE_HREF='/saber-examples' npm run build",
+    "gh": "cross-env BASE_HREF='/saber-examples/' npm run build",
     "start": "pm2 start 'npm run serve' --name app",
     "restart": "pm2 restart app",
     "stop": "pm2 kill",
