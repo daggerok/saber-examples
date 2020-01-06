@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "saber",
+    "build": "saber build",
+    "preserve": "npm run build",
+    "serve": "serve public",
+    "gh": "cross-env BASE_HREF='/saber-examples' npm run build",
+    "start": "pm2 start 'npm run serve' --name app",
+    "restart": "pm2 restart app",
+    "stop": "pm2 kill",
+    "logs": "pm2 logs"
+  },
+  "devDependencies": {
+    "@types/node": "13.1.4",
+    "cross-env": "6.0.3",
+    "pm2": "4.2.1",
+    "saber": "0.11.4",
+    "saber-plugin-feed": "0.4.3",
+    "saber-plugin-query-posts": "0.4.5",
+    "saber-theme-minima": "3.2.2",
+    "serve": "11.3.0"
+  }
+}
