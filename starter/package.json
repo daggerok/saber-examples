@@ -17,8 +17,17 @@
     "pm2": "4.2.1",
     "saber": "0.11.4",
     "saber-plugin-feed": "0.4.3",
+    "saber-plugin-prismjs": "0.2.4",
     "saber-plugin-query-posts": "0.4.5",
     "saber-theme-minima": "3.2.2",
     "serve": "11.3.0"
+  },
+  "dependencies": {
+    "prismjs": "1.18.0",
+    "saber-highlight-css": "0.1.1",
+    "webfontloader": "1.6.28"
+  },
+  "postcss": {
+    "browserslist": ["ie > 8", "last 2 versions"]
   }
 }
