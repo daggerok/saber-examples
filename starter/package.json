@@ -23,7 +23,7 @@
     "serve": "11.3.0"
   },
   "dependencies": {
-    "prismjs": "1.18.0",
+    "prismjs": "1.21.0",
     "saber-highlight-css": "0.1.1",
     "webfontloader": "1.6.28"
   },
